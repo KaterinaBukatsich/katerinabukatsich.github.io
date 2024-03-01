@@ -1,0 +1,403 @@
+html,body {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Cormorant", serif;
+    background-color: #FBF5F5;
+}
+
+.container {
+    max-width: 1740px;
+    margin: 15px auto;
+}
+
+.header {
+    background-color: #FBF5F5;
+    height: 100vh;
+    padding-top: 40px;
+
+}
+
+.header-line {
+    padding: 10px 0 0 20px;
+    margin-left: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.header-logo {
+    padding-left: 50px;
+}
+
+.nav {
+    padding-right: 50px;
+}
+
+.nav-item {
+    color: #3C2A2A;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 25px;
+    
+    transition: color 0.3s linear;
+}
+
+.nav-item:hover {
+    color: #d81d1d; 
+}
+
+.cards {
+    background-color: #B59797;
+    padding-left: 80px;
+    padding-bottom: 120px;
+    position: relative;
+}
+
+.cards-title {
+    color: #FFFFFF;
+    font-size: 80px;
+    font-weight: 600;
+    padding-top: 80px;
+}
+
+.card-item {
+    background-color: #FBF5F5;
+    text-align: center;
+    width: 20%;
+    padding: 35px 0 35px 0;
+    margin-top: 25px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.card-text {
+    color: #3C2A2A;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.card-subtext {
+    color: #3C2A2A;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.card-btn {
+    background-color: #FBF5F5;
+    border: solid #8D6B5D 2px;
+    text-decoration: none;
+    color: #3C2A2A;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 68px;
+    box-shadow: 5px 5px 10px 0px #00000040;
+    transition: background-color 0.2s linear;
+}
+
+.card-btn:hover {
+    background-color: #f0e1e1;
+}
+
+.card-button {
+    margin: 20px 0 20px 0;
+}
+
+.card-detail a {
+    color: #3C2A2A;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.cards-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards-image {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    overflow:hidden;
+    z-index: 1;
+}
+
+
+.questions-text {
+    color: #3C2A2A;
+    font-size: 80px;
+    font-weight: 600;
+    margin: 100px 0 30px 60px;
+}
+
+input.questionRadio
+{
+    display: none;
+}
+
+
+input.questionRadio + label + div
+{
+    display: none;
+}
+
+input.questionRadio:checked + label + div
+{
+    display: block;
+}
+
+
+input.questionRadio + label
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+input.questionRadio:checked + label
+{
+    display: none;
+}
+
+
+input.questionRadio + label + div + input + label
+{
+    display: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+input.questionRadio:checked + label + div + input + label
+{
+    display: block;
+}
+
+.question1 {
+    border-top: solid #181B1B 1px;
+    border-bottom: solid #181B1B 1px;
+    padding: 15px 0 15px 0;
+    margin-left: 60px;
+}
+
+.question {
+    border-bottom: solid #181B1B 1px;
+    padding: 15px 0 15px 0;
+    margin-left: 60px;
+}
+
+.question-text {
+    color: #3C2A2A;
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.answer {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.questions {
+    padding-bottom: 90px;
+}
+
+.buttons {
+    background-color: #B59797;
+    width: 100%;
+    padding: 45px 0 45px 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+.button {
+    color: #3C2A2A;
+    font-weight: 700;
+    font-size: 20px;
+    
+    transition: color 0.3s linear;
+}
+
+.button:hover {
+    color: #c74c4c;
+}
+
+div.footer {
+    width: 100%;
+    background-color: #3C2A2A;
+    padding: 30px 0 30px 0;
+    text-align: center;
+}
+
+.footer-name {
+    color: #FBF6F6;
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.messengers img{
+    margin-right: 15px;
+}
+
+
+.burger-menu {
+    display: none; /* Скрываем бургер меню по умолчанию */
+}
+
+ul#sub-menu { 
+   display: none; 
+} 
+
+
+
+
+@media only all and (max-width: 85em) {
+
+    .container {
+        margin-left: 30px;
+    }
+    
+    .card-item {
+        flex: 0 0 25%;
+    }
+    
+    .cards-items {
+        justify-content: center;
+    }
+    
+    .cards-image {
+        display: block;
+        position: relative;
+        width: 85%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -540px;
+        margin-bottom: 10px;
+    }
+    
+    .cards-title {
+        text-align: center;
+    }
+    
+    .cards {
+        padding-right: 0;
+    }
+     
+}
+
+
+
+@media only all and (max-width: 65em) {
+
+    .card-item {
+        flex: 0 0 33%;
+    }
+    
+    .cards-items {
+        justify-content: center;
+    }
+     
+}
+
+
+
+@media only all and (max-width: 58em) {
+    
+    .burger-menu {
+        display: block;    
+    }
+
+    .nav {
+        display: none; 
+    }
+    
+    .header-line {
+        justify-content: space-between;
+    }
+    
+    .logo-sub-menu {
+        cursor: pointer;
+    }
+    
+    ul#sub-menu { 
+        width: 20%;
+        margin-left: -140px;
+        margin-top: 10px;
+        background: #FBF6F6;
+        list-style-type: none;
+        font-size: 18px;
+        position: absolute;
+        border: solid #504949 1px;
+        border-radius: 10px;
+        z-index: 9999999;
+    } 
+    
+    ul#sub-menu a {
+        color: #3C2A2A;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        line-height: 1.6;
+        
+        transition: color 0.3s linear;
+    }
+    
+    ul#sub-menu a:hover {
+        color: #d81d1d;
+    }
+    
+}
+
+
+@media only all and (max-width: 52em) {
+    
+    .cards {
+        padding-left: 0;
+    }
+    
+
+    .cards-items {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .card-item {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .cards-image {
+        display: none;
+    }
+    
+    .question1, .question {
+        margin-left: 30px;
+    }
+    
+    .questions-text {
+        font-size: 50px;
+        margin-left: 30px;
+    }
+    
+    .buttons {
+        flex-direction: column;
+    }
+    
+    .buttons a {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    
+}
+
+

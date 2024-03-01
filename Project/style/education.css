@@ -1,0 +1,405 @@
+html,body {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Cormorant", serif;
+    background-color: #B59797;
+}
+
+.container {
+    background-color: #B59797;
+}
+
+.header-line {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.header-logo {
+    padding-left: 50px;
+}
+
+.nav {
+    padding-right: 50px;
+}
+
+.nav-item {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 25px;
+    
+    transition: color 0.3s linear;
+}
+
+.nav-item:hover {
+    color: #d81d1d; 
+}
+
+.content {
+    display: flex;
+    padding: 40px 20px 50px 90px; 
+    max-width: 1540px;
+    margin: 15px auto;
+    background-color: #FBF6F6;
+    justify-content: space-around;
+}
+
+.text-content {
+    flex: 0 0 50%;
+}
+
+.title-text-content {
+    color: #504949;
+    font-size: 80px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sub-text-content {
+    color: #504949;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.statistica {
+    display: flex;
+    justify-content: center;
+}
+
+p.clients {
+    color: #504949;
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 50px;
+}
+
+.clients span {
+    font-weight: 400;
+    font-size: 50px; 
+}
+
+.title-list-content {
+    color: #504949;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.list-content p, .list-content span {
+    margin: 0;
+}
+
+.image-content {
+    display: block;
+    min-width: 527px;
+    min-height: 673px;
+    overflow:hidden;
+    position:relative;
+    margin: 40px 0 0 20px;
+}
+    
+.image-content img {
+    position:absolute;
+    /*width:100%;*/
+}
+
+
+.tarif {
+    background-color: #FBF6F6;
+    margin: 80px 0 0 60px;
+    max-width: 1340px;
+    margin: 45px auto;
+}
+
+.tarif-title {
+    color: #504949;
+    font-size: 80px;
+    font-weight: 600;
+    padding: 60px 0 30px 80px;
+}
+
+.tarif-item {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarif-card {
+    background-color: #B59797;
+    margin-bottom: 40px;
+    padding: 30px 20px 30px 20px;
+    position: relative;
+}
+
+.tarif-card-title {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tarif-list {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.tarif-list li {
+    padding-bottom: 10px;
+}
+
+.tarif-price {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.tarif-button {
+    margin: 20px 0 20px 0;
+}
+
+.tarif-btn {
+    background-color: #FBF5F5;
+    border: solid #8D6B5D 2px;
+    text-decoration: none;
+    color: #504949;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 68px;
+    box-shadow: 5px 5px 10px 0px #00000040;
+    position: absolute;
+    left: 200px;
+    transition: background-color 0.2s linear;
+}
+
+.tarif-btn:hover {
+    background-color: #f0e1e1;
+}
+
+.tarif-down {
+    position: relative;
+    display: flex;
+    justify-content:   space-between;
+    /*flex-wrap: wrap;*/
+    margin-top: 80px;
+}
+
+.tarif-down-image {
+    display: block;
+    width: 419px;
+    height: 548px;
+    overflow:hidden;
+    position:relative;
+}
+
+.tarif-down-image img {
+    position:absolute;
+    width:100%
+}
+
+.tarif-down-text {
+    flex: 0 0 60%;
+    padding-bottom: 80px;
+    padding-right: 20px;
+}
+
+.tarif-down-title {
+    color: #504949;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+.sub-text {
+    color: #504949;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.sub-text span {
+    font-weight: 400;
+    font-size: 50px;
+    margin: 0;
+}
+
+div.footer {
+    width: 100%;
+    background-color: #3C2A2A;
+    padding: 30px 0 30px 0;
+    text-align: center;
+}
+
+.footer-name {
+    color: #FBF6F6;
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.messengers img{
+    margin-right: 15px;
+}
+
+.burger-menu {
+    display: none; /* Скрываем бургер меню по умолчанию */
+}
+
+ul#sub-menu { 
+   display: none; 
+} 
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.button {
+    display: block;
+    color: #3C2A2A;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 70px;
+    
+    transition: color 0.3s linear;
+}
+
+.button:hover {
+    color: #c74c4c;
+}
+
+
+
+@media only all and (max-width: 75em) {
+        
+    .content {
+        display: block;
+    }
+    
+    .image-content {
+        display: flex;
+        justify-content: center;
+    }
+     
+}
+
+
+@media only all and (max-width: 66em) {
+    
+    .tarif-item {
+        display: block;
+    }
+    
+    .tarif-card {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+
+@media only all and (max-width: 58em) {
+    
+    .burger-menu {
+        display: block;
+        padding-right: 60px;
+    }
+
+    .nav {
+        display: none; 
+    }
+    
+    .header-line {
+        justify-content: space-between;
+    }
+    
+    .logo-sub-menu {
+        cursor: pointer;
+    }
+    
+    ul#sub-menu { 
+        width: 20%;
+        margin-left: -140px;
+        margin-top: 10px;
+        background: #FBF6F6;
+        list-style-type: none;
+        font-size: 18px;
+        position: absolute;
+        border: solid #504949 1px;
+        border-radius: 10px;
+    } 
+    
+    ul#sub-menu a {
+        color: #3C2A2A;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        line-height: 1.6;
+        
+        transition: color 0.3s linear;
+    }
+    
+    ul#sub-menu a:hover {
+        color: #d81d1d;
+    }
+    
+    .image-content {
+        min-width: 427px;
+        min-height: 573px;
+    }
+    
+    .tarif-down {
+        display: block;
+        position: relative;
+    }
+    
+    .tarif-down-image img {
+        display: block;
+        position: relative;
+    }
+    
+    .tarif-down-image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .buttons {
+        flex-direction: column;
+    }
+    
+    .buttons a {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    
+    .tarif-button {
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .tarif-btn {
+        position: relative;
+        left: 0;
+    }
+    
+    .content {
+        padding-left: 50px;
+    }
+    
+        
+}
+    
+

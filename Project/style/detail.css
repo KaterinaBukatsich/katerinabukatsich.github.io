@@ -1,0 +1,189 @@
+html,body {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Cormorant", serif;
+    background-color: #B59797;
+}
+
+.header {
+    background-color: #FBF5F5;
+    height: 20vh;
+    /*padding-top: 20px;
+    padding-bottom: 20px;*/
+    margin: 0;
+}
+
+.header-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.header-logo {
+    padding-left: 76px;
+} 
+
+.nav {
+    padding-right: 76px; 
+}
+
+.nav-item {
+    color: #3C2A2A;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 25px;
+    
+    transition: color 0.3s linear;
+}
+
+.nav-item:hover {
+    color: #d81d1d; 
+}
+
+.cards-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px;
+    max-width: 1800px;
+    margin: 20px auto;
+}
+
+.card-detail {
+    width: 25%;
+    background-color: #FBF5F5;
+    padding: 30px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.name-detail {
+    color: #3C2A2A;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.sub-name-detail {
+    color: #3C2A2A;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.list-detail li, .sub-name-detail span {
+    color: #3C2A2A;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.list-detail li {
+    padding-bottom: 10px;
+}
+
+.footer {
+    margin-top: 60px;
+    background-color: #3C2A2A;
+    padding: 30px 0 30px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-name {
+    color: #FBF6F6;
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.messengers img{
+    margin-right: 15px;
+}
+
+.burger-menu {
+    display: none; /* Скрываем бургер меню по умолчанию */
+}
+
+ul#sub-menu { 
+   display: none; 
+} 
+
+
+
+@media only all and (max-width: 85em) {
+    
+    .card-detail {
+        flex: 0 0 33%;
+    }
+    
+    .cards-detail {
+        justify-content: center;
+    }
+    
+}
+
+
+@media only all and (max-width: 60em) {
+    
+    .cards-detail {
+        display: block;
+        margin: 0;
+        padding-top: 20px;
+    }
+    
+    .card-detail {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+        .burger-menu {
+        display: block;    
+    }
+
+    .nav {
+        display: none; 
+    }
+    
+    .header-line {
+        justify-content: space-between;
+    }
+    
+    .logo-sub-menu {
+        cursor: pointer;
+    }
+    
+    ul#sub-menu { 
+        width: 20%;
+        margin-left: -140px;
+        margin-top: 10px;
+        background: #FBF6F6;
+        list-style-type: none;
+        font-size: 18px;
+        position: absolute;
+        border: solid #504949 1px;
+        border-radius: 10px;
+        z-index: 9999999;
+    } 
+    
+    ul#sub-menu a {
+        color: #3C2A2A;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        line-height: 1.6;
+        
+        transition: color 0.3s linear;
+    }
+    
+    ul#sub-menu a:hover {
+        color: #d81d1d;
+    }
+    
+    .logo-sub-menu img {
+        margin-right: 76px;
+    }
+    
+}
